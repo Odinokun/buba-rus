@@ -37,20 +37,19 @@
     &::before {
       position: absolute;
       right: 0;
-      bottom: 0;
-      left: -25px;
-      width: 340px;
-      height: 9px;
+      bottom: -3px;
+      left: -15px;
+      width: 170px;
+      height: 13px;
       content: '';
-      background-image: url('../img/banner-underline.svg');
+      background-image: url('../img/top-underline.svg');
       background-repeat: no-repeat;
       background-position: 50% 0;
       background-size: contain;
 
       @include max(980) {
-        bottom: -7px;
         left: -5px;
-        width: 210px;
+        width: 100px;
       }
     }
   }

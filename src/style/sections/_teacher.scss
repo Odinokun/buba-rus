@@ -9,7 +9,7 @@
 
   @include max(980) {
     margin-top: -100px;
-    background-color: #ca8495;
+    background-color: #83a1e9;
     background-image: none;
   }
   &::after {
@@ -18,19 +18,13 @@
     right: 0;
     bottom: 0;
     left: 0;
-    display: none;
     margin: auto;
     content: '';
     pointer-events: none;
-    opacity: .3;
-    background-image: url('../img/bg-teacher-03.png'), url('../img/bg-teacher-04.png');
+    background-image: url('../img/bg-teacher-2.png');
     background-repeat: no-repeat;
-    background-position: 0 0, 100% 50px;
-    background-size: auto, auto;
-
-    @include max(980) {
-      display: block;
-    }
+    background-position: 100% 50px;
+    background-size: auto;
   }
   &::before {
     position: absolute;
@@ -56,6 +50,7 @@
     padding-bottom: 75px;
 
     @include max(980) {
+      padding-top: 50px;
       padding-bottom: 0;
     }
   }
@@ -141,7 +136,7 @@
   font-family: $gilroy;
   font-size: 18px;
   font-weight: 400;
-  line-height: 35px;
+  line-height: 30px;
   padding-left: 20px;
   list-style-image: url('../img/ul.svg');
   color: #fff;
@@ -156,6 +151,8 @@
 }
 
 .teacher__pic {
+  position: relative;
+  z-index: 1;
   display: none;
   width: 100%;
   background-repeat: no-repeat;
@@ -175,7 +172,6 @@
     width: calc(100% + 50px);
     margin-top: 30px;
     margin-left: -25px;
-    background-size: auto;
   }
 }
 

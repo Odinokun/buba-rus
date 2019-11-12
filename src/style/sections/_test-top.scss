@@ -15,7 +15,7 @@
     margin: auto;
     content: '';
     pointer-events: none;
-    background-image: url('../img/bg-test-top-1.png'), url('../img/bg-test-top-2.png');
+    background-image: url('../img/bg-test-top-01.png'), url('../img/bg-test-top-02.png');
     background-repeat: no-repeat, no-repeat;
     background-position: 0 0, 100% 0;
 
@@ -73,7 +73,7 @@
 
 .test-banner__title {
   font-family: $gilroy-bold;
-  font-size: 55px;
+  font-size: 50px;
   line-height: 1;
   position: relative;
   margin-bottom: 45px;
@@ -115,7 +115,7 @@
       width: 220px;
       height: 10px;
       content: '';
-      background-image: url('../img/top-underline.svg');
+      background-image: url('../img/test-underline.svg');
       background-repeat: no-repeat;
       background-position: 50% 0;
       background-size: contain;
@@ -185,6 +185,7 @@
 
 .test-decor {
   position: absolute;
+  z-index: 1;
   right: -80px;
   bottom: 80px;
   display: flex;
